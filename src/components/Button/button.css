@@ -1,0 +1,16 @@
+button {
+  display: block;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: rgb(31, 31, 31);
+  box-shadow: 0 0 1em rgb(48, 48, 48);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+button:hover {
+  background-color: rgb(58, 55, 55);
+}

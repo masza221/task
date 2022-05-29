@@ -1,0 +1,34 @@
+.table{
+
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 1em rgb(63, 63, 63);
+    overflow: hidden;
+    border-spacing:0px;
+    margin: 10px;
+    text-align: center;
+    background-color: #272727;
+    color: white;
+}
+.table__td{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.table__tr{
+    display: flex;
+}
+.td__id{
+    width: 50px;
+    border-right: 1px solid black;
+}
+.td__name{
+    width: 175px;
+    border-right: 1px solid black;
+}
+.td__year{
+    width: 175px;
+}

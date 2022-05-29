@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from "react-router-dom";
+import TableComp from './components/TableComp/TableComp';
+import SingleTable from "./components/SingleTable/SingleTable";
+import Nav from './components/Nav/Nav';
+
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="app">
+      <Nav></Nav>
+      <Routes>
+        <Route
+          path={'/'}
+          element={<TableComp />}>
+        </Route>
+        <Route
+          path='/:id'
+          element={<TableComp />}>
+        </Route>
+        <Route
+          path='/product/:id'
+          element={<SingleTable />}>
+        </Route>
+      </Routes>
+    </div >
   );
 }
 
